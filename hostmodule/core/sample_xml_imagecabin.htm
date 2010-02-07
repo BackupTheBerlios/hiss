@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0036)http://www.imagecabin.com/index4.php -->
+<HTML>
+<HEAD>
+<meta name="description" content="ImageCabin offers image hosting, free photo sharing and video sharing. Upload your photos, host your videos, and share them with friends and family."/>
+	<meta name="keywords" content="free image hosting, free video hosting, image hosting, video hosting, photo image hosting site, video hosting site"/>
+<!--<meta http-equiv="Cache-Control" content="no-cache">-->
+<title>FREE IMAGE HOSTING - ImageCabin  Free Image Hosting</title>
+<link href="/styles/icstyle.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+div#tipDiv {
+  position:absolute; visibility:hidden; left:0; top:0; z-index:10000;
+  background-color:#dee7f7; border:1px solid #336; 
+  width:250px; padding:4px;
+  color:#000; font-size:11px; line-height:1.2;
+}
+div.tp1 { font-size:12px; color:#336; font-style:italic }
+</style>
+<script src="include/dw_rotator.js" type="text/javascript"></script>
+<script src="include/dw_event.js" type="text/javascript"></script>
+<script src="include/dw_viewport.js" type="text/javascript"></script>
+<script src="include/dw_tooltip.js" type="text/javascript"></script>
+<script src="http://10694.hittail.com/mlt.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+<!--      
+function doTooltip(e, msg) {
+  if ( typeof Tooltip == "undefined" || !Tooltip.ready ) return;
+  Tooltip.show(e, msg);
+}
+function hideTip() {
+  if ( typeof Tooltip == "undefined" || !Tooltip.ready ) return;
+  Tooltip.hide();
+}
+
+function Copy(txt) {
+  window.clipboardData.setData('text', txt);
+  window.status="Code copied to clipboard.";
+  setTimeout("window.status=''",3000)
+}
+
+function resizePlayer(size) {   
+  player=document.getElementById("MediaPlayer1");
+  if(size==1){
+    player.width=800;    
+    player.height=662;
+  } else if (size==2){
+    player.width=1024;    
+    player.height=830;
+  } else if (size==3){
+    player.width=320;    
+    player.height=262;
+  }
+}  
+
+  		function endBusy()
+      {
+      	var overDiv = document.getElementById('overDiv');
+      	var busy = document.getElementById('loading'); 
+      	overDiv.style.display = "none"; 
+      	busy.style.display = "none";
+      	
+      }
+      
+      function startBusy()
+      {
+      
+      	setOverDiv();
+      	var overDiv = document.getElementById('overDiv');
+      	var busy = document.getElementById('loading'); 
+      	//overDiv.style.display = "block"; 
+      	busy.style.display = "block"; 
+      	
+      }
+      
+      function setOverDiv()
+      {
+      
+      	if (window.innerWidth)
+      	{
+      		var w = window.innerWidth;
+      		var h = window.innerHeight;
+      		var ph = document.height;
+      		var t = window.pageYOffset;
+      	}
+      	else if (document.all)
+      	{
+      		var w = document.body.clientWidth;
+      		var h = document.body.clientHeight;
+      		var ph = h = document.body.scrollHeight;
+      		var t = document.body.scrollTop;
+      	}
+      	
+      	var div = document.getElementById('overDiv');
+      	div.style.width = w + "px";
+      	div.style.height = ph + "px";
+      
+      	var div = document.getElementById("loading");
+      	div.style.position = "absolute";
+      	div.style.top = (((h/2)+t) - 23) + "px";
+      	div.style.left = ((w/2) - 23) + "px";
+      	
+      }
+      
+  		function addOption(selectId,txt,val)
+			{
+				var objOption = new Option(txt,val);
+				document.getElementById(selectId).options.add(objOption);
+			}
+			
+	function MM_findObj(n, d) { //v4.0
+        var p,i,x;
+        if (!d) {
+           d = document;
+        }
+        if ( (p=n.indexOf("?")) > 0 && parent.frames.length ) {
+           d = parent.frames[n.substring(p+1)].document;
+           n = n.substring(0,p);
+        }
+        if (!(x=d[n]) && d.all) {
+           x = d.all[n];
+        }
+        for (i=0; !x && i < d.forms.length; i++) {
+           x = d.forms[i][n];
+        }
+        for (i=0; !x && d.layers && i < d.layers.length; i++) {
+           x = MM_findObj(n,d.layers[i].document);
+        }
+        if (!x && document.getElementById) {
+           x = document.getElementById(n);
+        }
+        return x;
+     }
+     
+     function MM_showHideLayers() {  
+        var i, p, v, obj;
+        var args = MM_showHideLayers.arguments;
+  
+        for (i = 0; i<(args.length-2); i+=3) {
+           if ((obj=MM_findObj(args[i])) != null) {
+  
+              v = args[i+2];
+  
+              if (obj.style) {
+                 obj = obj.style;
+                 v = (v=='none') ? 'block' :  'none';
+              }
+              obj.display = v;
+           }
+        }
+     }
+	 
+function initRotator() {
+    // arguments: image name, rotation speed, (optional) path to images
+    var rotator1 = new dw_Rotator('rot1', 2000, "images/");
+    // add the images to rotate into that image object  
+    rotator1.addImages("1.jpg", "2.jpg", "3.jpg");
+    //rotator1.rotate(); // sometimes may want to call rotate here
+    dw_Rotator.start();
+}
+
+function clkApp(box){
+  box = box+'';    
+  if (document.getElementById('ap'+box).checked == false) {
+      if (document.getElementById('top'+box).disabled == false) {
+        document.getElementById('top'+box).checked = false;      
+        document.getElementById('top'+box).disabled = true;
+      }
+  } else {
+      document.getElementById('del'+box).checked = false;
+      document.getElementById('top'+box).disabled = false;
+  }
+}
+
+function clkDel(box){
+  box = box+'';    
+  if (document.getElementById('del'+box).checked == true) {
+      if (document.getElementById('top'+box).disabled == false) {
+        document.getElementById('top'+box).checked = false;      
+        document.getElementById('top'+box).disabled = true;
+      }
+      document.getElementById('ap'+box).checked = false;      
+  }
+
+}
+
+//-->
+</script>
+ <script type="text/javascript">var xajaxRequestUri="/index.php";</script>
+	<script type="text/javascript" src="/index.php?xajaxjs=xajaxjs"></script>
+
+</HEAD>
+<BODY onload="Tooltip.init(); initRotator()">
+<div id="overDiv">&nbsp;</div>
+<div id="loading" style="background-color:#FFFFFF; padding: 20px 40px 20px 40px; border: solid #000000 1px;"><span class="copy2" ><strong>Loading...</strong></span><img src="images/spinner.gif" align="absmiddle"/></div>
+<table width="820" height="100%" align="center" cellpadding="0" cellspacing="0" style="border: solid #999999 1px">
+  <tr>
+    <td valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="230" align="left"><img src="images/logo_snow_new.gif" width="276" height="98" hspace="0" vspace="0" border="0" class="padding"></td>
+        <td width="555" align="right" valign="bottom"><div id="menubar" class="navigator"><!--<link href="styles/icstyle.css" rel="stylesheet" type="text/css" />-->
+<a href="index.php" class="menulink">Home</a> | <a href="search.php" class="menulink">Search</a> | <a href="login.php" class="menulink">Login</a> | <a href="TOS.php" class="menulink">TOS</a> | <a href="features.php" class="menulink">Features</a> | <a href="signup.php" class="menulink">Sign Up</a>
+|
+</div>
+          <img src="images/1px.gif" alt="spacer" width="500" height="15"></td>
+    </tr>
+</table>
+<table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2" bgcolor="#ff9d00"><img src="images/1px.gif" alt="spacer" width="3" height="3"></td>
+    </tr>
+</table>
+<table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2" bgcolor="#000000"><img src="images/1px.gif" alt="spacer" width="1" height="1"></td>
+    </tr>
+</table>
+      <!--Pocetak containera bre-->
+<table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div id="container"><br><table width="630" align="center" bgcolor="#ddeeab" valign="middle"><tr><td align="center" valign="middle"><div id="thumb_container0" class="thumb_container"><span id="thumb0"><table width="192px" height="100px" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td width="192px" height="100px" align="center"><a href="index.php?view=2628603024e7ccfc73156a95e"><img border="1" id="thimg0" src="files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif" /></a></td></tr></table></span><span id="realname0" class="thumb_el"><strong>test.gif</strong></span><br><span id="title0" class="thumb_el">Title: <strong></strong></span><br><span id="desc0" class="thumb_el">Description: <strong>empty</strong></span><br><span id="size0" class="thumb_el">Size: 2 kB</span><br><span id="category0" class="thumb_el">Category: <strong></strong></span><br><span id="hitcnt0" class="thumb_el">Hitcount: <strong>0</strong></span></div></td><td align="right">Please support our free service by placing a link back to ImageCabin on
+your forum, site, or blog. Thank you.<br/></br>URL code: <input type="text" value="http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e" style="width:250px">
+                                      <input type="button" value="Copy" onClick="Copy('http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e');"/> <br/>
+  								                    phpBB code: <input type="text" value="[url=http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e][img]http://www.imagecabin.com/files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif[/img][/url]" style="width:250px">
+                                      <input type="button" value="Copy" onClick="Copy('[url=http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e][img]http://www.imagecabin.com/files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif[/img][/url]');"/> <br/>
+                                      HTML code: <input type="text" value="<a href='http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e'><img border='0' src='http://www.imagecabin.com/files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif' alt='Hosted by ImageCabin.com'></a>" style="width:250px">
+                                      <input type="button" value="Copy" onClick="Copy('<a href=\'http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e\'><img border=\'0\' src=\'http://www.imagecabin.com/files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif\' alt=\'Hosted by ImageCabin.com\'></a>');"/>
+                                      </td></tr></table><br />Tell a friend about this file:<br />
+                <form name="tellafriend" method="post" action="tellafriend.php"><input type="hidden" name="fileurl[]" value="http://www.imagecabin.com/?view=2628603024e7ccfc73156a95e"><input type="hidden" name="thumbz[]" value="http://www.imagecabin.com/files/2010/01/07/thumbs/2628603024e7ccfc73156a95e.gif"> Your email: <input type="text" name="sender"><br />
+                Friend 1: <input type="text" name="friend[]"><br />
+                Friend 2: <input type="text" name="friend[]"><br />
+                Friend 3: <input type="text" name="friend[]"><br />
+                Friend 4: <input type="text" name="friend[]"><br />
+                Friend 5: <input type="text" name="friend[]"><br />
+                <input type="submit" value="Submit" name="submit">
+            </form><br /><p><a href="index.php">Upload More!!!</a></p>
+</div></td>
+  </tr>
+</table>
+<table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2" bgcolor="#000000"><img src="images/1px.gif" alt="spacer" width="1" height="1"></td>
+    </tr>
+</table>
+<table width="820" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2" bgcolor="#ff9d00"><img src="images/1px.gif" alt="spacer" width="3" height="3"></td>
+    </tr>
+</table>
+
+<!-- kraj CONTAINERA -->
+<P align="center"><SPAN class=text>
+<A class="formlink" href="http://www.imagecabin.com/link_to_us.php">Link to Us</A> | 
+<A class="formlink" href="http://www.imagecabin.com/about_us.php">About Us</A> | 
+<A class="formlink" href="http://www.imagecabin.com/advertise.php">Advertise</A> | 
+<A class="formlink" href="contact.php">Contact Us</A>
+</SPAN></P>
+<P align="center" class=formtext>Copyright &copy; ImageCabin.com | <a href="http://www.n3v.net" target="_new" title="Linux Server Administration">Linux Server Administration</a>
+</P></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-779227-8";
+urchinTracker();
+</script>
+<script type="text/javascript" language="javascript1.2"><!--
+EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+EXb=EXs.colorDepth:EXb=EXs.pixelDepth;//-->
+</script><script type="text/javascript"><!--
+navigator.javaEnabled()==1?EXjv="y":EXjv="n";
+EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+location.protocol=="https:"?EXprot="https":EXprot="http";
+top.document.referrer?EXref=top.document.referrer:EXref=EXd.referrer;
+EXd.write("<img src="+EXprot+"://nht-2.extreme-dm.com",
+"/n3.g?login=muzikman&amp;url="+escape(document.URL)+"&amp;pv=&amp;",
+"jv="+EXjv+"&amp;j=y&amp;srw="+EXw+"&amp;srb="+EXb+"&amp;",
+"l="+escape(EXref)+" height=1 width=1>");//-->
+</script><noscript><img height="1" width="1" alt=""
+src="http://nht-2.extreme-dm.com/n3.g?login=muzikman&amp;url=nojs&amp;j=n&amp;jv=n&amp;pv="/>
+</noscript>
+<!-- End eXTReMe Non Public Tracker Code -->
+</noscript>

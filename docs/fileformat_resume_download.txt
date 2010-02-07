@@ -1,0 +1,11 @@
+Hier werden die Daten über die Gedownloadeten Files gespeichert.
+Resume DownloadFile:
+
+<file=downloadTracker>
+<img name="file1.jpg" downloadFinished="1">
+<img name="file2.jpg" downloadFinished="1">
+<img name="file3.jpg" downloadFinished="1">
+<img name="file4.jpg" downloadFinished="0">
+
+so he kicks the images out of the list<> [downloader] where the filename is allready in the 
+resume download file. 

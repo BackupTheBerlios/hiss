@@ -1,0 +1,82 @@
+==== MainWindow ====
+MUSS
+*Auflistung der Jobs.
+*Den Fortschritt des Jobs.
+*Neue Downloads und Uploads ermöglichen
+*Jobs pausieren
+*Jobs wieder aufnehmen
+*Jobs abbrechen
+
+SOLL
+*Fehlermeldung anzeigen im Job.
+*Schaltflächen in der Liste für jeden Job
+**Sollte nur erscheinen, wenn man mit der Maus über dem Job ist
+
+KANN
+*Per Drag&Drop aufs Hauptfenster einen neuen Upload starten
+
+==== New Download ====
+MUSS
+*Metafile lokal laden
+*Extrahierungspfad wählen
+*Password zum Entschlüsseln
+
+SOLL
+*Beim Laden der Metafile ein password dialog anzeigen
+
+KANN
+*
+
+==== New Upload ====
+MUSS
+*Die hochzuladende Datei wählen
+*Collection benutzen
+*Bilderordner wählen
+*Passwort
+*Hosts auswählen
+
+SOLL
+*Wenn über Drag&Drop, dann Dateipfad anzeigen
+*Collection Einstellungen (Button)
+
+KANN
+*
+
+==== Settings ====
+MUSS
+*Collection Pfad
+*Collection Downloader auswählen
+*präferierte Hoster wählen
+*Collection updaten
+
+SOLL
+*Konfiguration speichern
+*Wählen ob Jobs automatisch gestartet werden
+*Collectiongröße beschränken
+
+KANN
+*ins Tray minimieren
+*Bandbreite beschränken
+
+
+==== About ====
+MUSS
+*Lizenz
+*Programmzweck
+
+SOLL
+*
+
+KANN
+*Easter Egg
+
+==== Help ====
+Eine Hilfedatei wenn noch Zeit ist
+MUSS
+*alle Dialoge bebildert beschreiben
+
+SOLL
+*ein Howto für ein Paar Usecases
+
+KANN
+*FAQ

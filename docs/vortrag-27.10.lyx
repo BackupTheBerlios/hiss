@@ -1,0 +1,186 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Teamprojekt
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+Komponentendiagramm
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename component diagram.png
+	lyxscale 86
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+Aufgabenverteilung
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+CryptoManager: Andreas
+\begin_inset Newline newline
+\end_inset
+
+Chunker: Rashid
+\begin_inset Newline newline
+\end_inset
+
+LSBStore, ExivStore: Thomas
+\begin_inset Newline newline
+\end_inset
+
+HostModule: Gerrit, Jerg
+\begin_inset Newline newline
+\end_inset
+
+Unittests,CLI: Adrian
+\begin_inset Newline newline
+\end_inset
+
+GUI: Adrian,Andreas
+\begin_inset Newline newline
+\end_inset
+
+TransferManager: Thomas,Rashid
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Noch unsicher über: Dokumentation
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+Technologie
+\end_layout
+
+\begin_layout Itemize
+qt-core für Library, bietet Base64Encode, HTTP Klassen...
+\end_layout
+
+\begin_layout Itemize
+libexiv für ExivStore
+\end_layout
+
+\begin_layout Itemize
+qt-gui für GUI
+\end_layout
+
+\begin_layout Itemize
+qca für CryptoManager, wrappt openssl
+\end_layout
+
+\begin_layout Itemize
+Scriptsprache für die einzelnen HostModule, noch unsicher ob lua/qtscript/python
+\end_layout
+
+\begin_layout Itemize
+evtl mit dem CollectionManager Bilder von der Google Bildersuche benutzen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://sourceforge.net/projects/googleimagedown
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+Zeitplan
+\end_layout
+
+\begin_layout Itemize
+4.11.09: Nutzeranalyse, Ablaufanalyse
+\end_layout
+
+\begin_layout Itemize
+11.11.09: Grobentwurf
+\end_layout
+
+\begin_layout Itemize
+18.11.09: Feinentwurf
+\end_layout
+
+\begin_layout Itemize
+2.12.09: Erste Lauffähige Version
+\end_layout
+
+\begin_layout Itemize
+16.12.09: Alle Features vorhanden
+\end_layout
+
+\begin_layout Itemize
+6.1.10: Unittests vorhanden, Enduser Dokumentation
+\end_layout
+
+\begin_layout Itemize
+13.1.10: Endabgabe
+\end_layout
+
+\end_body
+\end_document
