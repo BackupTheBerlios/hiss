@@ -36,9 +36,10 @@ MainWindow::MainWindow(QMainWindow *parent)
 		disclaimer.setText(tr("Legal Information"));
 		disclaimer.setInformativeText(tr("The authors of this program don't take the responsibilty for your actions"));
 		disclaimer.addButton(tr("&Ok"),QMessageBox::YesRole);
-//		disclaimer.addButton(tr("Oh &Noes"),QMessageBox::NoRole);
+/*		disclaimer.addButton(tr("Oh &Noes"),QMessageBox::NoRole);
 		connect(disclaimer.buttons().at(1), SIGNAL(clicked(bool)), 
 			this, SLOT(close()));
+*/
 		disclaimer.setIcon(QMessageBox::Question);
 		int ret = disclaimer.exec();
 		
